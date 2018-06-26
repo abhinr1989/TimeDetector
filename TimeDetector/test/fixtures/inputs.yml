@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  in-time: 2018-06-26 03:57:11
+  out-time: 2018-06-26 03:57:11
+
+two:
+  in-time: 2018-06-26 03:57:11
+  out-time: 2018-06-26 03:57:11
