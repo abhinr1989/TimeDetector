@@ -14,8 +14,8 @@ class InputsTest < ApplicationSystemTestCase
     visit inputs_url
     click_on "New Input"
 
-    fill_in "In Time", with: @input.in-time
-    fill_in "Out Time", with: @input.out-time
+    fill_in "Intime", with: @input.InTime
+    fill_in "Outtime", with: @input.OutTime
     click_on "Create Input"
 
     assert_text "Input was successfully created"
@@ -26,8 +26,8 @@ class InputsTest < ApplicationSystemTestCase
     visit inputs_url
     click_on "Edit", match: :first
 
-    fill_in "In Time", with: @input.in-time
-    fill_in "Out Time", with: @input.out-time
+    fill_in "Intime", with: @input.InTime
+    fill_in "Outtime", with: @input.OutTime
     click_on "Update Input"
 
     assert_text "Input was successfully updated"

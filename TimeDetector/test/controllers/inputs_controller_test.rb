@@ -17,7 +17,7 @@ class InputsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create input" do
     assert_difference('Input.count') do
-      post inputs_url, params: { input: { in-time: @input.in-time, out-time: @input.out-time } }
+      post inputs_url, params: { input: { InTime: @input.InTime, OutTime: @input.OutTime } }
     end
 
     assert_redirected_to input_url(Input.last)
@@ -34,7 +34,7 @@ class InputsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update input" do
-    patch input_url(@input), params: { input: { in-time: @input.in-time, out-time: @input.out-time } }
+    patch input_url(@input), params: { input: { InTime: @input.InTime, OutTime: @input.OutTime } }
     assert_redirected_to input_url(@input)
   end
 

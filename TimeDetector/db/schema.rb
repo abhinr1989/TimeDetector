@@ -10,14 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_06_25_224229) do
+ActiveRecord::Schema.define(version: 2018_06_27_073641) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "posts", force: :cascade do |t|
-    t.datetime "intime"
-    t.datetime "outtime"
+  create_table "inputs", force: :cascade do |t|
+    t.datetime "InTime"
+    t.datetime "OutTime"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
